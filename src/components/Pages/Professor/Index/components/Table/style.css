@@ -1,0 +1,22 @@
+.professor-table {
+  table-layout: fixed;
+}
+
+.professor-table td,
+.professor-table th {
+  overflow: hidden;
+  padding: 12px;
+  text-overflow: ellipsis;
+}
+
+.professor-table tr th:nth-of-type(1) {
+  width: 130px;
+}
+
+.professor-table tr th:nth-of-type(3) {
+  width: 140px;
+}
+
+.professor-table tr th:nth-of-type(4) {
+  width: 120px;
+}

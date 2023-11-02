@@ -1,0 +1,10 @@
+.semestre-table {
+  table-layout: fixed;
+}
+
+.semestre-table td,
+.semestre-table th {
+  overflow: hidden;
+  padding: 12px;
+  text-overflow: ellipsis;
+}

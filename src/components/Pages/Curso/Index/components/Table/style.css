@@ -1,0 +1,10 @@
+.course-table td,
+.course-table th {
+  overflow: hidden;
+  padding: 12px;
+  text-overflow: ellipsis;
+}
+
+.course-table tr th:nth-of-type(2) {
+  width: 300px;
+}
