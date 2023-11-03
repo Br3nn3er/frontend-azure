@@ -7,7 +7,7 @@ import {
   Button,
   usePrevious,
 } from '@chakra-ui/react';
-import { yupResolver } from '@hookform/resolvers/yup/dist/yup';
+import { yupResolver } from '@hookform/resolvers/yup';
 import moment from 'moment';
 import Link from 'next/link';
 import { FC, useCallback, useEffect } from 'react';

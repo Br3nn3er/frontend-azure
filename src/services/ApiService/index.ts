@@ -15,14 +15,12 @@ class ApiService {
   private isRefreshing: boolean;
 
   constructor(cookieService: CookieService) {
-    const { NEXT_PUBLIC_API_URL } = process.env;
-
     this.isRefreshing = false;
 
     this.cookieService = cookieService;
 
     this.axios = axios.create({
-      baseURL: NEXT_PUBLIC_API_URL,
+      baseURL: process.env.NEXT_PUBLIC_API_URL,
       headers: {
         Authorization: `Bearer ${this.cookieService.getToken()}`,
       },
@@ -65,7 +63,7 @@ class ApiService {
     if (status !== 401) {
       // TODO: REMOVE
       this.cookieService.destroy();
-      Router.push('/');
+      await Router.push('/');
 
       return Promise.reject(error);
     }

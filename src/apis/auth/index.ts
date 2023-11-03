@@ -23,6 +23,12 @@ export const login = async (
 };
 
 export const me = async (apiService: ApiService) => {
-  const { data } = await apiService.axios.get<User>('/users/me');
-  return data;
+  try {
+    const { data } = await apiService.axios.get<User>('/users/me');
+    return data;
+  } catch (e) {
+    if (e.response) throw new Error(e.response.data.message);
+
+    throw e;
+  }
 };

@@ -1,5 +1,5 @@
 import { Flex } from '@chakra-ui/react';
-import { yupResolver } from '@hookform/resolvers/yup/dist/yup';
+import { yupResolver } from '@hookform/resolvers/yup';
 import { FC, useCallback, useState } from 'react';
 import { FieldError, useForm } from 'react-hook-form';
 import * as yup from 'yup';

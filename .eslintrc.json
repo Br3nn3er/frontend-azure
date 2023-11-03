@@ -26,7 +26,6 @@
     "prettier"
   ],
   "rules": {
-    "camelcase": "warn",
     "react/no-array-index-key": ["off"],
     "react/jsx-fragments": ["off"],
     "react/function-component-definition": "off",
@@ -34,7 +33,7 @@
     "func-names": "off",
     "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off",
-    "prettier/prettier": "warn",
+    "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "no-unused-vars": "off",

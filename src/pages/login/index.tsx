@@ -1,5 +1,6 @@
 import { Button, Center, Flex, Spinner, Stack, Text } from '@chakra-ui/react';
-import { yupResolver } from '@hookform/resolvers/yup/dist/yup';
+
+import { yupResolver } from '@hookform/resolvers/yup';
 import Router from 'next/router';
 import { FC, useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -39,8 +40,8 @@ const Login: FC = () => {
         setLoadding(true);
         const user = await signIn(value);
 
-        if (user.isAdmin) Router.push(CourseRoute.LIST);
-        else Router.push(QueueRoute.INDEX);
+        if (user.isAdmin) await Router.push(CourseRoute.LIST);
+        else await Router.push(QueueRoute.INDEX);
       } catch ({
         message = 'Erro ao fazer login, tente novamente mais tarde!',
       }) {

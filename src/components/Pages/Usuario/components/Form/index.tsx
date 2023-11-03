@@ -8,7 +8,7 @@ import {
   usePrevious,
   Spinner,
 } from '@chakra-ui/react';
-import { yupResolver } from '@hookform/resolvers/yup/dist/yup';
+import { yupResolver } from '@hookform/resolvers/yup';
 import Link from 'next/link';
 import { FC, useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';

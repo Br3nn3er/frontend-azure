@@ -7,7 +7,7 @@ import {
   Button,
   usePrevious,
 } from '@chakra-ui/react';
-import { yupResolver } from '@hookform/resolvers/yup/dist/yup';
+import { yupResolver } from '@hookform/resolvers/yup';
 import Link from 'next/link';
 import { FC, useCallback, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
@@ -37,14 +37,7 @@ const Form: FC<Props> = ({ course, isUpdate = false, loader, onSubmit }) => {
   const { errors } = formState;
 
   const formSubmit = useCallback<OnSubmit>(
-    (value: {
-      campus: string;
-      code: string;
-      name: string;
-      periodClash: any;
-      timeClash: any;
-      unit: string;
-    }) => {
+    value => {
       onSubmit({
         campus: value.campus.trim(),
         code: value.code.trim(),

@@ -108,7 +108,7 @@ const AuthProvider: FC<Props> = ({ children }) => {
       isAuthenticated,
       user,
     }),
-    [alreadyFirstFetched, fetchingUser, isAuthenticated, user],
+    [alreadyFirstFetched, fetchingUser, isAuthenticated, signIn, signOut, user],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
