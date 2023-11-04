@@ -52,6 +52,9 @@
       ],
       "@styles/*": [
         "src/styles/*"
+      ],
+      "react": [
+        "node_modules/@types/react"
       ]
     }
   },

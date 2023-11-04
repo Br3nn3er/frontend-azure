@@ -1,8 +1,0 @@
-info  - Loaded env from C:\Users\brenn\Documents\frontend\.env.local
-info  - Loaded env from C:\Users\brenn\Documents\frontend\.env
-event - compiled client and server successfully in 2.8s (899 modules)
-> Ready on http://localhost:\\.\pipe\559c2fb7-7fe5-47ef-98ac-e7fbaad6fd82
-wait  - compiling /_error (client and server)...
-event - compiled client and server successfully in 331 ms (900 modules)
-wait  - compiling /login (client and server)...
-event - compiled client and server successfully in 594 ms (1086 modules)

@@ -32,7 +32,10 @@ import { Course } from '@models/Course';
 
 import { NavigationServiceInstance } from '@services/index';
 
+// import { Children } from 'react';
+
 import { Props } from './types';
+// import { Children } from 'react';
 
 const tableStyle: CSSProperties = {
   tableLayout: 'fixed',
