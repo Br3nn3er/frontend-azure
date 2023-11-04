@@ -16,6 +16,7 @@ import { FC, useCallback, useRef, useState } from 'react';
 import { RiProfileLine } from 'react-icons/ri';
 
 import { ModalQueue } from '@components/ModalQueue';
+// eslint-disable-next-line import/no-cycle
 import { Table as DisciplineQueueTable } from '@components/Pages/Fila/Index/components/DisciplineQueue/components/Table';
 import { Loader } from '@components/PageList/components/Loader';
 

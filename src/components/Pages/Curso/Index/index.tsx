@@ -1,20 +1,14 @@
 import Router from 'next/router';
 import { FC, useCallback, useState } from 'react';
-
 import { CanAccess } from '@components/CanAccess';
 import { Role } from '@components/CanAccess/types';
 import { PageListHeader } from '@components/PageList/components/Header';
 import { Wrapper } from '@components/Wrapper';
-
 import { useCourseApi } from '@contexts/ApiContext';
-
 import { CourseRoute } from '@enums/Route';
-
 import { usePageDidMount } from '@hooks/UseDidMount';
 import { useToast } from '@hooks/useToast';
-
 import { Course } from '@models/Course';
-
 import { Table } from './components/Table';
 
 const userRole = [Role.ADMIN];
