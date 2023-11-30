@@ -1,4 +1,12 @@
-import { Button, Center, Flex, Spinner, Stack, Text } from '@chakra-ui/react';
+import {
+  Button,
+  Center,
+  Flex,
+  Spinner,
+  Stack,
+  Text,
+  Image,
+} from '@chakra-ui/react';
 
 import { yupResolver } from '@hookform/resolvers/yup';
 import Router from 'next/router';
@@ -77,6 +85,13 @@ const Login: FC = () => {
       >
         <Stack spacing="4">
           <Center width="100%">
+            <Image
+              src="/ufu-simb.png"
+              // fallbackSrc="https://comunica.ufu.br/sites/default/files/imagem/2023-08/anexo_45_anos_ufu-01%5B1%5D.png"
+              boxSize="120px"
+              objectFit="cover"
+              alt="Logo da UFU"
+            />
             <Text
               fontSize={22}
               fontWeight="medium"
