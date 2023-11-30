@@ -86,8 +86,8 @@ const Login: FC = () => {
         <Stack spacing="4">
           <Center width="100%">
             <Image
-              src="/public/ufu-simb.png"
-              fallbackSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ufu_logo.svg/480px-Ufu_logo.svg.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ufu_logo.svg/480px-Ufu_logo.svg.png"
+              fallbackSrc="/public/ufu-simb.png"
               boxSize="100px"
               objectFit="cover"
               borderRadius="full"
