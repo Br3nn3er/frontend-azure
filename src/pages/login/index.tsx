@@ -86,10 +86,11 @@ const Login: FC = () => {
         <Stack spacing="4">
           <Center width="100%">
             <Image
-              src="/ufu-simb.png"
-              // fallbackSrc="https://comunica.ufu.br/sites/default/files/imagem/2023-08/anexo_45_anos_ufu-01%5B1%5D.png"
-              boxSize="120px"
+              src="/public/ufu-simb.png"
+              fallbackSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ufu_logo.svg/480px-Ufu_logo.svg.png"
+              boxSize="100px"
               objectFit="cover"
+              borderRadius="full"
               alt="Logo da UFU"
             />
             <Text
